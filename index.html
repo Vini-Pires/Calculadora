@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/root.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/calc.css">
+  <link rel="stylesheet" href="./css/calc__key-grid.css">
+</head>
+<body class="app">
+  <main class="main">
+    <section class="calc">
+      <form class="calc__card" name="Calc">
+        <input disabled class="calc__visor" name="visor">
+        <div class="calc__kboard" data-kboard>
+          <input type="button" class="calc__key" value="C" onclick="displayNum(location.reload())">
+          <input type="button" class="calc__key" value="/" onclick="displayNum(divbtn.value)" name="divbtn">
+          <input type="button" class="calc__key" value="*" onclick="displayNum(mulbtn.value)" name="mulbtn">
+          <input type="button" class="calc__key" value="-" onclick="displayNum(minbtn.value)" name="minbtn">
+          <input type="button" class="calc__key" value="+" onclick="displayNum(plubtn.value)" name="plubtn">
+          <input type="button" class="calc__key" value="=" onclick="visor.value=eval(visor.value)" name="eqlbtn">
+          <input type="button" class="calc__key" value="0" onclick="displayNum(btn0.value)" name="btn0">
+          <input type="button" class="calc__key" value="1" onclick="displayNum(btn1.value)" name="btn1">
+          <input type="button" class="calc__key" value="2" onclick="displayNum(btn2.value)" name="btn2">
+          <input type="button" class="calc__key" value="3" onclick="displayNum(btn3.value)" name="btn3">
+          <input type="button" class="calc__key" value="4" onclick="displayNum(btn4.value)" name="btn4">
+          <input type="button" class="calc__key" value="5" onclick="displayNum(btn5.value)" name="btn5">
+          <input type="button" class="calc__key" value="6" onclick="displayNum(btn6.value)" name="btn6">
+          <input type="button" class="calc__key" value="7" onclick="displayNum(btn7.value)" name="btn7">
+          <input type="button" class="calc__key" value="8" onclick="displayNum(btn8.value)" name="btn8">
+          <input type="button" class="calc__key" value="9" onclick="displayNum(btn9.value)" name="btn9">
+          <input type="button" class="calc__key" value="." onclick="displayNum(dot.value)" name="dot">
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+<script src="./index.js"></script>
+</html>

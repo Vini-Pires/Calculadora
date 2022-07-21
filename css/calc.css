@@ -1,0 +1,44 @@
+.calc{ 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.calc__card {
+  align-items: center;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-flow: column;
+  height: 80vh;
+  padding: 1rem;
+  width: 40vh;
+}
+
+.calc__visor {
+  background: #424242;
+  border: solid white 2px;
+  color: white;
+  display: flex;
+  font-size: 2rem;
+  height: 25%;
+  text-align: end;
+  width: 100%;
+}
+
+.calc__kboard {
+  display: grid;
+  flex-grow: 1;
+  gap: .25rem;
+  grid-template-areas: 'key';
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+.calc__key {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
